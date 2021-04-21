@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+    <title>red-bicicletas</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <h3> Red bicicletas</h3>
+        </div>
+
+        <ul>
+            <li><a href="/list" id="inicio">inicio</a></li>
+        </ul>
+    </nav>
+
+    <main id="root">
+
+        <section class="create-bici">
+            <div id="map">
+
+            </div>
+
+            <div class="map-form">
+                <form action="">
+                    <h3> new bicicleta</h3>
+                    <div class="input">
+                        <label for="nom-bici"> nombre bicicleta </label>
+                        <input type="text" name="nom-bici" id="nom-bici">
+                    </div>
+                    <div class="input">
+                        <label for="color-bici"> color bicicleta</label>
+                        <input type="text" name="color-bici" id="color-bici">
+                    </div>
+                    <div class="input">
+                        <label for="latitud">latitud</label>
+                        <input type="text" name="lati-bici" id="latitud">
+                    </div>
+                    <div class="input">
+                        <label for="longitud">longitud </label>
+                        <input type="text" name="long-bici" id="longitud">
+    
+                    </div>
+                    <button type="button" id="guardar-bici">guardar</button>
+                </form>
+            </div>
+           
+        </section>
+
+        <section>
+            <div class="listar-bici">
+                <table class="table" id="table">
+                    <thead>
+                      <tr>
+                        <th >#</th>
+                        <th >Nombre</th>
+                        <th >Color</th>
+                        <th >Ubicacion</th>
+                        <th >Accciones</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                      
+                        
+                    </tbody>
+                  </table>
+               
+               
+               
+                <!-- <table>
+                    <tr>
+                        <th>nombre</th>
+                        <th>color</th>
+                        <th>ubicacion</th>
+                        <th>opciones</th>
+                    </tr>
+                </table> -->
+            </div>
+ 
+        </section>
+
+        
+        
+
+
+    </main>
+
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
